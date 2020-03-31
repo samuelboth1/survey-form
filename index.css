@@ -2,19 +2,79 @@
     padding: 0;
     margin: 0;
 }
+*:focus{
+    outline: none;
+}
 :root{
     --main-background-color: linear-gradient(to right, #03c6fc, #5be3dc);
+    --box-shadow: gray 0.4px 0.4px 0.4px 0.4px
 }
+
 body{
     background-image: var(--main-background-color);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
 }
+main{
+    display: flex;
+}
+/* styling form */
 #survey-form{
-    width: 40%;
+    width: 50%;
     margin-left: 15rem;
     margin-top: 5rem;
+    font-size: 1.5rem;
+}
+#survey-form input{
+    border: none;
+    box-shadow: var(--box-shadow);
+    margin-left: 2%;
+    height: 1.5rem;
+    width: 40%;
+    float: right; 
+    font-size: 1rem;
+    color: gray;
 }
 
+#email{
+    width: 82% !important;
+}
+#survey-form select{
+    height: 2rem;
+    margin-left: 4.4%;
+}
+#number{
+    width: 70% !important;
+    height: 2rem !important;
+}
+#survey-form label{
+    text-align: left;
+}
+#message{
+    border: none;
+    float: right;
+    width: 82%;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    margin-top: -3rem;
+    height: 5rem;
+    font-size: 1rem;
+    color: gray;
+}
+#message-label{
+    margin-top: 1rem;
+    float: left;
+}
+::-webkit-input-placeholder{
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+#submit{
+    float: left !important;
+    text-align: center;
+}
 
+/* end styling form */
+/* styling divs */
