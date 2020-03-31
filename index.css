@@ -16,9 +16,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
 }
-main{
-    display: flex;
-}
 /* styling form */
 #survey-form{
     width: 50%;
@@ -36,7 +33,6 @@ main{
     font-size: 1rem;
     color: gray;
 }
-
 #email{
     width: 82% !important;
 }
@@ -74,7 +70,31 @@ main{
 #submit{
     float: left !important;
     text-align: center;
+    background-color: transparent;
+    border: white 2px solid !important;
+    border-radius: 4px;
+    color: white !important;
+    text-transform: uppercase;
+    width: 12rem !important;
+    height: 3rem !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: none !important;
+}
+#submit:hover{
+    animation: btn-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 /* end styling form */
-/* styling divs */
+
+@keyframes btn-hover{
+    0%{
+        border: white 2px solid; 
+    }
+    100%{
+        border: none;
+        background-color: white;
+        color: black;
+    }
+}
